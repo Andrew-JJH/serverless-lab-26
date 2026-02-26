@@ -11,7 +11,7 @@ import crypto from "crypto";
 const sns = new SNSClient({ region: process.env.AWS_REGION ?? "us-east-1" });
 const ddb = new DynamoDBClient({ region: process.env.AWS_REGION ?? "us-east-1" });
 
-const SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:883822223160:S3-CV-SNS";
+const SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:192511262417:ebook";
 const DDB_TABLE_NAME = "ContactMessages";
 
 const CORS_HEADERS = {
